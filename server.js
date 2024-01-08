@@ -14,6 +14,10 @@ let rippleData = {
 
 const xrpl = require("xrpl");
 
+// 默认路由，返回 'Hello World'
+fastify.get('/', async (request, reply) => {
+  return 'Hello World';
+});
 
 // 获取 Ripple 地址的 API
 fastify.get('/ripple-address', async (request, reply) => {
