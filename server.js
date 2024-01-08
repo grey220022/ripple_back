@@ -75,6 +75,7 @@ fastify.post('/mint-badge', async (request, reply) => {
   });
 
 // 启动服务器
+/*
 const start = async () => {
   try {
     const PORT = process.env.PORT || 3000;
@@ -86,3 +87,5 @@ const start = async () => {
   }
 };
 start();
+*/
+module.exports = fastify;

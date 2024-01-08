@@ -13,6 +13,7 @@
   "dependencies": {
     "@fastify/cors": "^8.5.0",
     "fastify": "^4.25.1",
+    "serverless-http": "^3.2.0",
     "xrpl": "^2.14.0"
   }
 }
