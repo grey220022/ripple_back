@@ -73,7 +73,8 @@ fastify.post('/mint-badge', async (request, reply) => {
 // 启动服务器
 const start = async () => {
   try {
-    await fastify.listen(3000);
+    const PORT = process.env.PORT || 3000;
+    await fastify.listen(PORT);
     fastify.log.info(`server listening on ${fastify.server.address().port}`);
   } catch (err) {
     fastify.log.error(err);
