@@ -1,0 +1,9 @@
+[build]
+  functions = "netlify/functions" # 指定无服务器函数存放的目录
+  publish = "public" # 指定静态资源发布的目录
+
+[[redirects]]
+  from = "/*"
+  to = "/.netlify/functions/serverless"
+  status = 200
+  force = true
